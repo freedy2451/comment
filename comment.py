@@ -23,3 +23,17 @@ for d in data:
 print("一共有", len(new), "筆留言小於100")        
 print(new[0])
 print(new[1])
+#篩選有good
+good = []
+'''
+for d in data:
+    if "good" in d:
+        good.append(d)
+'''
+#快寫法
+good = [d for d in data if 'good in d']
+print(good[0])
+
+
+print("一共有{}筆留言提到good".format(len(good)))     
+print(new[0])   
